@@ -1,7 +1,8 @@
 {
-	"SmallKat Controller":{
+	"hidfast":{
 		"scriptGit": "https://github.com/OperationSmallKat/SmallKatLinkLoader.git",
-    		"scriptFile": "load.groovy"
+    		"scriptFile": "load.groovy",
+    		"description":"SmallKat Controller"
 	}
 	
 }
