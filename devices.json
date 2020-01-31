@@ -1,1 +1,7 @@
-{}
+{
+	"SmallKat Controller":{
+		"scriptGit": "https://github.com/OperationSmallKat/SmallKatLinkLoader.git",
+    		"scriptFile": "load.groovy"
+	}
+	
+}
