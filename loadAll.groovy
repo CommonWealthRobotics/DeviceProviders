@@ -7,6 +7,7 @@ HashMap<String, HashMap<String, Object>> database = ScriptingEngine.gitScriptRun
 											"devices.json",null)
 for(String key:database.keySet()) {
 	HashMap<String, Object> data = database.get(key)
+	ScriptingEngine.pull(data.scriptGit);
 	def provider = ScriptingEngine.gitScriptRun(
 											data.scriptGit,
 											data.scriptFile,[key])
