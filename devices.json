@@ -2,7 +2,12 @@
 	"hidfast":{
 		"scriptGit": "https://github.com/OperationSmallKat/SmallKatLinkLoader.git",
     		"scriptFile": "load.groovy",
-    		"description":"SmallKat Controller"
+    		"description":"SmallKat UDP Controller"
+	},
+	"hidSimplePacketLink":{
+		"scriptGit": "https://github.com/OperationSmallKat/SmallKatLinkLoader.git",
+    		"scriptFile": "hidLinkLoader.groovy",
+    		"description":"SmallKat HID Controller"
 	}
 	
 }
