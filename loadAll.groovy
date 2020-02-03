@@ -7,12 +7,16 @@ HashMap<String, HashMap<String, Object>> database = ScriptingEngine.gitScriptRun
 											"devices.json",null)
 for(String key:database.keySet()) {
 	HashMap<String, Object> data = database.get(key)
-	ScriptingEngine.pull(data.scriptGit);
-	def provider = ScriptingEngine.gitScriptRun(
-											data.scriptGit,
-											data.scriptFile,[key])
-	if(INewLinkProvider.class.isInstance(provider)) {
-		println "Adding a link provider "+key+": "+data.description
-		LinkFactory.addLinkProvider(key, provider)
+	try{
+		ScriptingEngine.pull(data.scriptGit);
+		def provider = ScriptingEngine.gitScriptRun(
+												data.scriptGit,
+												data.scriptFile,[key])
+		if(INewLinkProvider.class.isInstance(provider)) {
+			println "Adding a link provider "+key+": "+data.description
+			LinkFactory.addLinkProvider(key, provider)
+		}
+	}catch (Throwable t){
+		BowlerStudio.printStackTrace(t)
 	}
 }										
