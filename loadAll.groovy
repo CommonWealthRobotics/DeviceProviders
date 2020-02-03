@@ -17,6 +17,7 @@ for(String key:database.keySet()) {
 			LinkFactory.addLinkProvider(key, provider)
 		}
 	}catch (Throwable t){
-		BowlerStudio.printStackTrace(t)
+		t.printStackTrace()
+		//BowlerStudio.printStackTrace(t)
 	}
 }										
