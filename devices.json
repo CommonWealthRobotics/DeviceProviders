@@ -10,8 +10,8 @@
     		"description":"SmallKat HID Controller"
 	},
 	"pidg-link":{
-		"scriptGit": "https://github.com/Hephaestus-Arm/HephaestusArm2.git",
-    		"scriptFile": "PID-G_DeviceLoader.groovy",
+		"scriptGit": "https://github.com/Hephaestus-Arm/HIDLinkLoader.git",
+    		"scriptFile": "load.groovy",
     		"description":"WPI RBE 3001 Hephaestus-2 Arm Controller"
 	}
 	
