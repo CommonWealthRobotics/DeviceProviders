@@ -13,6 +13,10 @@
 		"scriptGit": "https://github.com/Hephaestus-Arm/HIDLinkLoader.git",
     		"scriptFile": "load.groovy",
     		"description":"WPI RBE 3001 Hephaestus-2 Arm Controller"
+	},
+	"udp-7dof-float":{
+		"scriptGit": "https://github.com/Hephaestus-Arm/HIDLinkLoader.git",
+    		"scriptFile": "loadUDP.groovy",
+    		"description":"WPI RBE 3001 Hephaestus-2 Arm Controller"
 	}
-	
 }
