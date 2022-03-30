@@ -12,3 +12,5 @@
 /.cproject
 /cache/
 /*.class
+/.settings
+bin
