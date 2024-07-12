@@ -12,7 +12,7 @@ for(String key:database.keySet()) {
 	try{
 		HashMap<String, Object> data = database.get(key)
 		//println "Loading "+data.description
-		ScriptingEngine.pull(data.scriptGit);
+		//ScriptingEngine.pull(data.scriptGit);
 		def provider = ScriptingEngine.gitScriptRun(data.scriptGit,data.scriptFile,[key])
 		if(INewLinkProvider.class.isInstance(provider)) {
 			println "Adding a link provider "+key+": "+data.description
